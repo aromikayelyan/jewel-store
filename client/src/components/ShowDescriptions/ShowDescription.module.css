@@ -1,0 +1,7 @@
+.descriptionMenu {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	position: relative;
+	list-style: none;
+}

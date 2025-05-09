@@ -1,0 +1,131 @@
+.singleProductContent {
+	display: flex;
+	justify-content: space-around;
+}
+.singleProductInfo {
+	flex: 2.7;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 10px 30px;
+}
+.singleProductImages {
+	flex: 3;
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.singleProductImageBoxWrapper {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+}
+.singleProductImageBox {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 10px;
+}
+.singleProductImage,
+.singleProductImagePreviewImage {
+	cursor: pointer;
+	background-position: center center;
+	background-size: cover;
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+.singleProductImage:hover,
+.singleProductImagePreviewImage:hover {
+	opacity: 0.75;
+}
+.singleProductSliderImage {
+	border-radius: 10px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.singleProductSliderImage:hover {
+	opacity: 0.75;
+}
+
+.singleProductSliderImage {
+	width: 200px;
+	height: 200px;
+}
+.singleProductImagePreviewImage {
+	width: 400px;
+	height: 400px;
+}
+.singleProductName h2,
+.singleProductReviews h3 {
+	font-weight: normal;
+	margin: 10px 0;
+}
+.singleProductName h4 {
+	color: var(--accent);
+}
+.singleProductReviews {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.similarProducts {
+	padding: 20px;
+}
+
+.similarProductsContent {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+@media (max-width: 924px) {
+	.singleProductImagePreviewImage {
+		width: 250px;
+		height: 250px;
+	}
+	.singleProductImage {
+		width: 100px;
+		height: 100px;
+	}
+	.singleProductInfo {
+		padding: 10px 15px;
+		flex: 2;
+	}
+}
+@media (max-width: 675px) {
+	.singleProductContent {
+		margin-top: 50px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	.singleProductImageBoxWrapper {
+		flex-direction: column;
+	}
+
+	.singleProductImageBox {
+		flex-direction: row;
+
+		order: 2;
+	}
+	.singleProductImagePreviewImage {
+		order: 1;
+	}
+	.singleProductInfo {
+		align-items: center;
+		padding: 5px;
+	}
+	.singleProductName h2 {
+		font-size: 30px;
+	}
+	.singleProductName h4 {
+		font-size: 20px;
+	}
+}

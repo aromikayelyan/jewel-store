@@ -1,0 +1,34 @@
+.shop {
+	display: flex;
+	flex-direction: column;
+}
+.shopContent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.products {
+	flex: 2.5;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.scroll {
+	overflow: hidden;
+}
+@media (max-width: 924px) {
+	.shopContent {
+		flex-direction: column;
+		margin-top: 20px;
+	}
+	.products {
+		justify-content: space-evenly;
+	}
+}
+
+@media (max-width: 675px) {
+	.shopContent {
+		margin-top: 20px;
+	}
+}
